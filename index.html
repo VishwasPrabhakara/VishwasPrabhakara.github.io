@@ -12,6 +12,7 @@
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Home">
       <span class="brand-mark">VP</span>
@@ -55,12 +56,31 @@
 <span class="key">strength:</span> end-to-end ownership
 <span class="key">currently:</span> IISc Bengaluru
 <span class="key">preferred:</span> applied ML in a domain</code></pre>
+        <div class="system-map" aria-hidden="true">
+          <div class="map-node node-data"><span>01</span>DATA</div>
+          <div class="map-line line-a"></div>
+          <div class="map-node node-model"><span>02</span>MODEL</div>
+          <div class="map-line line-b"></div>
+          <div class="map-node node-ship"><span>03</span>SHIP</div>
+          <div class="map-pulse"></div>
+        </div>
       </aside>
       <div class="hero-metrics reveal">
         <article><strong>3,552</strong><span>ward-month records modeled</span></article>
         <article><strong>11.84%</strong><span>sMAPE on AquaOps</span></article>
         <article><strong>6</strong><span>tool-using agents in Sutra</span></article>
         <article><strong>80%</strong><span>exact result match in DataLens</span></article>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Areas of expertise">
+      <div class="marquee-track">
+        <span>TIME-SERIES FORECASTING</span><i>◆</i><span>PRODUCTION MLOPS</span><i>◆</i>
+        <span>APPLIED GENAI</span><i>◆</i><span>COMPUTER VISION</span><i>◆</i>
+        <span>GEOSPATIAL ANALYTICS</span><i>◆</i><span>FULL-STACK DELIVERY</span><i>◆</i>
+        <span>TIME-SERIES FORECASTING</span><i>◆</i><span>PRODUCTION MLOPS</span><i>◆</i>
+        <span>APPLIED GENAI</span><i>◆</i><span>COMPUTER VISION</span><i>◆</i>
+        <span>GEOSPATIAL ANALYTICS</span><i>◆</i><span>FULL-STACK DELIVERY</span><i>◆</i>
       </div>
     </section>
 
@@ -114,6 +134,15 @@
 
       <div class="project-grid">
         <article class="project-card featured reveal" data-tags="mlops">
+          <div class="project-visual aqua-visual" aria-hidden="true">
+            <div class="chart-grid"></div>
+            <svg viewBox="0 0 420 150" role="presentation">
+              <path class="chart-baseline" d="M8 112 C52 102,72 120,112 93 S176 101,210 70 S274 90,310 54 S365 61,412 22"/>
+              <path class="chart-model" d="M8 122 C49 115,76 103,112 104 S171 88,210 82 S270 64,310 69 S369 42,412 36"/>
+              <circle cx="412" cy="36" r="5"/>
+            </svg>
+            <div class="visual-label"><span>rolling backtest</span><strong>candidate → champion</strong></div>
+          </div>
           <div class="project-top"><span>01 / MLOps</span><a href="https://github.com/VishwasPrabhakara/aquaops" target="_blank" rel="noreferrer" aria-label="AquaOps on GitHub">↗</a></div>
           <h3>AquaOps</h3>
           <p>Production-style urban water-demand forecasting with controlled promotion, drift monitoring, and conditional retraining.</p>
@@ -126,6 +155,15 @@
         </article>
 
         <article class="project-card reveal" data-tags="genai">
+          <div class="project-visual agent-visual" aria-hidden="true">
+            <div class="agent-center">ORCH</div>
+            <span class="agent-dot a1">CAL</span><span class="agent-dot a2">MAIL</span>
+            <span class="agent-dot a3">WEB</span><span class="agent-dot a4">TASK</span>
+            <span class="agent-dot a5">WX</span>
+            <svg viewBox="0 0 420 150" role="presentation">
+              <path d="M210 75 L80 28 M210 75 L340 28 M210 75 L55 118 M210 75 L365 118 M210 75 L210 137"/>
+            </svg>
+          </div>
           <div class="project-top"><span>02 / Agentic AI</span><a href="https://github.com/VishwasPrabhakara/sutra" target="_blank" rel="noreferrer" aria-label="Sutra on GitHub">↗</a></div>
           <h3>Sutra</h3>
           <p>A deployed multi-agent chief of staff with real tools, streaming traces, memory, and human confirmation before outbound actions.</p>
@@ -138,6 +176,11 @@
         </article>
 
         <article class="project-card reveal" data-tags="genai retrieval">
+          <div class="project-visual sql-visual" aria-hidden="true">
+            <div class="query-chip">Which artists sold the most?</div>
+            <div><div class="pipeline-chip">RETRIEVE</div><div class="pipeline-arrow">→</div><div class="pipeline-chip">GENERATE</div><div class="pipeline-arrow">→</div><div class="pipeline-chip success">VALIDATE ✓</div></div>
+            <div class="sql-code">SELECT artist, SUM(total)<br>ORDER BY revenue DESC;</div>
+          </div>
           <div class="project-top"><span>03 / Text-to-SQL</span><a href="https://github.com/VishwasPrabhakara/datalens" target="_blank" rel="noreferrer" aria-label="DataLens on GitHub">↗</a></div>
           <h3>DataLens</h3>
           <p>Natural-language database analytics with hybrid schema retrieval, constrained SQL generation, validation, and correction retries.</p>
@@ -150,6 +193,11 @@
         </article>
 
         <article class="project-card reveal" data-tags="genai retrieval">
+          <div class="project-visual rag-visual" aria-hidden="true">
+            <div class="paper-stack"><span></span><span></span><span></span></div>
+            <div class="retrieval-beam"></div>
+            <div class="citation-answer">Grounded answer <b>[1]</b><br>with page evidence <b>[2]</b></div>
+          </div>
           <div class="project-top"><span>04 / RAG</span><a href="https://github.com/VishwasPrabhakara/Paperlens" target="_blank" rel="noreferrer" aria-label="PaperLens on GitHub">↗</a></div>
           <h3>PaperLens</h3>
           <p>Citation-aware PDF question answering using dense and sparse retrieval, rank fusion, and local cross-encoder reranking.</p>
@@ -184,6 +232,22 @@
           </ul>
           <div class="card-result"><span>Delivery</span><strong>Tested + deployed</strong></div>
         </article>
+      </div>
+    </section>
+
+    <section class="section journey-section">
+      <div class="section-heading split-heading reveal">
+        <div>
+          <p class="eyebrow">Trajectory</p>
+          <h2>From learning models to owning systems</h2>
+        </div>
+        <p class="journey-intro">The through-line is increasing ownership: first models, then research workflows, then deployed and monitored systems.</p>
+      </div>
+      <div class="timeline reveal">
+        <article><div class="timeline-year">2022</div><div class="timeline-dot"></div><div><span>Foundation</span><h3>ML Intern</h3><p>TensorFlow training, inference refinement, and client-pipeline integration.</p></div></article>
+        <article><div class="timeline-year">2024</div><div class="timeline-dot"></div><div><span>Applied research</span><h3>IISc Project Intern</h3><p>Environmental forecasting, data reconciliation, and computer vision research.</p></div></article>
+        <article><div class="timeline-year">2025</div><div class="timeline-dot"></div><div><span>Ownership</span><h3>IISc Project Assistant</h3><p>Sole ownership of a city-scale forecasting workflow with stakeholder delivery.</p></div></article>
+        <article><div class="timeline-year">2026</div><div class="timeline-dot active"></div><div><span>Production thinking</span><h3>MLOps + Agentic AI</h3><p>Deployment, monitoring, controlled promotion, human-in-the-loop systems, and CI.</p></div></article>
       </div>
     </section>
 

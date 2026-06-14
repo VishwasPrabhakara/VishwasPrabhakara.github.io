@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vishwas Prabhakara, Machine Learning Engineer building forecasting, MLOps, and applied AI systems.">
+  <title>Vishwas Prabhakara | Machine Learning Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark">VP</span>
+      <span>Vishwas Prabhakara</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-resume" href="assets/Vishwas_Prabhakara_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span>Bengaluru, India · Open to ML/AI roles</p>
+        <h1>I build ML systems that survive contact with real data.</h1>
+        <p class="hero-intro">
+          Machine Learning Engineer at IISc working across forecasting, MLOps, computer vision,
+          and agentic AI. I take systems from messy inputs through evaluation, deployment,
+          monitoring, and a usable interface.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work</a>
+          <a class="button secondary" href="assets/Vishwas_Prabhakara_Resume.pdf" target="_blank" rel="noreferrer">View resume</a>
+        </div>
+      </div>
+      <aside class="hero-panel reveal" aria-label="Profile highlights">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <p>profile.yaml</p>
+        </div>
+        <pre><code><span class="key">role:</span> ML Engineer
+<span class="key">focus:</span>
+  - time-series forecasting
+  - production MLOps
+  - applied GenAI
+<span class="key">strength:</span> end-to-end ownership
+<span class="key">currently:</span> IISc Bengaluru
+<span class="key">preferred:</span> applied ML in a domain</code></pre>
+      </aside>
+      <div class="hero-metrics reveal">
+        <article><strong>3,552</strong><span>ward-month records modeled</span></article>
+        <article><strong>11.84%</strong><span>sMAPE on AquaOps</span></article>
+        <article><strong>6</strong><span>tool-using agents in Sutra</span></article>
+        <article><strong>80%</strong><span>exact result match in DataLens</span></article>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Current work</p>
+        <h2>Applied ML for urban water systems</h2>
+      </div>
+      <div class="work-grid">
+        <article class="work-story reveal">
+          <div class="story-meta">
+            <span>Indian Institute of Science</span>
+            <span>2024 — Present</span>
+          </div>
+          <h3>Groundwater Outlook for Bengaluru</h3>
+          <p>
+            I solely own the ML workflow developed in collaboration with BWSSB: reconciling
+            erratic measurements, engineering temporal features, selecting models through
+            leakage-safe backtests, and communicating operational limits.
+          </p>
+          <div class="evidence-grid">
+            <div><strong>37</strong><span>Bengaluru wards</span></div>
+            <div><strong>222</strong><span>final-test predictions</span></div>
+            <div><strong>0.606</strong><span>aggregate final-test R²</span></div>
+            <div><strong>0.907</strong><span>R² at shorter horizons</span></div>
+          </div>
+          <a class="text-link" href="https://github.com/VishwasPrabhakara/Groundwater_Outlook_For_Bengaluru" target="_blank" rel="noreferrer">Read the methodology <span>↗</span></a>
+        </article>
+        <div class="process reveal" aria-label="Machine learning process">
+          <div class="process-item"><span>01</span><div><strong>Acquire</strong><p>CGWB manual, DWLR, and state groundwater records.</p></div></div>
+          <div class="process-item"><span>02</span><div><strong>Reconcile</strong><p>Create a complete monthly target series without target imputation.</p></div></div>
+          <div class="process-item"><span>03</span><div><strong>Validate</strong><p>Use fixed-origin backtests and an untouched temporal test.</p></div></div>
+          <div class="process-item"><span>04</span><div><strong>Explain</strong><p>Report horizon degradation and operational assumptions honestly.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-heading split-heading reveal">
+        <div>
+          <p class="eyebrow">Selected builds</p>
+          <h2>Systems, not notebook demos</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="mlops" type="button">MLOps</button>
+          <button class="filter" data-filter="genai" type="button">GenAI</button>
+          <button class="filter" data-filter="retrieval" type="button">Retrieval</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal" data-tags="mlops">
+          <div class="project-top"><span>01 / MLOps</span><a href="https://github.com/VishwasPrabhakara/aquaops" target="_blank" rel="noreferrer" aria-label="AquaOps on GitHub">↗</a></div>
+          <h3>AquaOps</h3>
+          <p>Production-style urban water-demand forecasting with controlled promotion, drift monitoring, and conditional retraining.</p>
+          <ul>
+            <li>7,271 monthly records across 44 zones</li>
+            <li>Beat the best baseline in 3 of 4 windows</li>
+            <li>MLflow · DVC · PSI drift · FastAPI · Docker</li>
+          </ul>
+          <div class="card-result"><span>Champion model</span><strong>11.84% sMAPE</strong></div>
+        </article>
+
+        <article class="project-card reveal" data-tags="genai">
+          <div class="project-top"><span>02 / Agentic AI</span><a href="https://github.com/VishwasPrabhakara/sutra" target="_blank" rel="noreferrer" aria-label="Sutra on GitHub">↗</a></div>
+          <h3>Sutra</h3>
+          <p>A deployed multi-agent chief of staff with real tools, streaming traces, memory, and human confirmation before outbound actions.</p>
+          <ul>
+            <li>FastAPI + React + TypeScript</li>
+            <li>Calendar and Gmail OAuth integrations</li>
+            <li>Dockerized on Google Cloud Run</li>
+          </ul>
+          <div class="card-result"><span>Architecture</span><strong>5 agents + learner</strong></div>
+        </article>
+
+        <article class="project-card reveal" data-tags="genai retrieval">
+          <div class="project-top"><span>03 / Text-to-SQL</span><a href="https://github.com/VishwasPrabhakara/datalens" target="_blank" rel="noreferrer" aria-label="DataLens on GitHub">↗</a></div>
+          <h3>DataLens</h3>
+          <p>Natural-language database analytics with hybrid schema retrieval, constrained SQL generation, validation, and correction retries.</p>
+          <ul>
+            <li>FAISS + BM25 with rank fusion</li>
+            <li>Read-only policy enforced by sqlglot</li>
+            <li>EXPLAIN before query execution</li>
+          </ul>
+          <div class="card-result"><span>Benchmark</span><strong>80% exact match</strong></div>
+        </article>
+
+        <article class="project-card reveal" data-tags="genai retrieval">
+          <div class="project-top"><span>04 / RAG</span><a href="https://github.com/VishwasPrabhakara/Paperlens" target="_blank" rel="noreferrer" aria-label="PaperLens on GitHub">↗</a></div>
+          <h3>PaperLens</h3>
+          <p>Citation-aware PDF question answering using dense and sparse retrieval, rank fusion, and local cross-encoder reranking.</p>
+          <ul>
+            <li>Page-level source metadata</li>
+            <li>Answer-linked citation filtering</li>
+            <li>Up to 5 PDFs and 200 pages</li>
+          </ul>
+          <div class="card-result"><span>Retrieval</span><strong>Hybrid + reranked</strong></div>
+        </article>
+
+        <article class="project-card reveal" data-tags="genai mlops">
+          <div class="project-top"><span>05 / Applied AI</span><a href="https://github.com/VishwasPrabhakara/matchlens" target="_blank" rel="noreferrer" aria-label="MatchLens on GitHub">↗</a></div>
+          <h3>MatchLens</h3>
+          <p>Multi-facet resume matching with structured skill gaps and longitudinal job-market drift analysis.</p>
+          <ul>
+            <li>Four weighted embedding facets</li>
+            <li>Centroid distance and KS testing</li>
+            <li>SQLite + Parquet persistence</li>
+          </ul>
+          <div class="card-result"><span>Focus</span><strong>Interpretable matching</strong></div>
+        </article>
+
+        <article class="project-card reveal" data-tags="genai">
+          <div class="project-top"><span>06 / Google ADK</span><a href="https://github.com/VishwasPrabhakara/smart-text-agent" target="_blank" rel="noreferrer" aria-label="SmartText Agent on GitHub">↗</a></div>
+          <h3>SmartText Agent</h3>
+          <p>Containerized tool-calling agent for summarization, Q&A, classification, text statistics, and intent routing.</p>
+          <ul>
+            <li>Five deterministic tool contracts</li>
+            <li>Offline tests and GitHub Actions</li>
+            <li>Deployed to Google Cloud Run</li>
+          </ul>
+          <div class="card-result"><span>Delivery</span><strong>Tested + deployed</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">How I work</p>
+        <h2>Engineering judgment before model novelty</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I am most useful where data is inconsistent, model behavior needs to be defended,
+            and the final system has to work for someone outside the ML team.
+          </p>
+          <p>
+            My work spans environmental forecasting, MLOps, computer vision, RAG, text-to-SQL,
+            full-stack deployment, and stakeholder communication.
+          </p>
+        </div>
+        <div class="principles reveal">
+          <article><span>01</span><h3>Validate against reality</h3><p>Temporal splits, untouched tests, baselines, and explicit failure analysis.</p></article>
+          <article><span>02</span><h3>Prefer evidence over complexity</h3><p>A simpler model wins when it generalizes better and costs less to operate.</p></article>
+          <article><span>03</span><h3>Build the whole path</h3><p>Data, model, API, UI, deployment, monitoring, and documentation belong together.</p></article>
+        </div>
+      </div>
+      <div class="toolbelt reveal">
+        <span>Python</span><span>Scikit-learn</span><span>TensorFlow</span><span>LightGBM</span>
+        <span>FastAPI</span><span>Docker</span><span>GCP</span><span>MLflow</span>
+        <span>DVC</span><span>Gemini</span><span>LangChain</span><span>FAISS</span>
+        <span>SQL</span><span>React</span><span>GIS</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section reveal">
+      <p class="eyebrow">Let’s build something useful</p>
+      <h2>Looking for an ML engineer who can own more than the model?</h2>
+      <p>I’m targeting ML Engineer, AI Engineer, and Applied Scientist roles across India.</p>
+      <div class="contact-actions">
+        <a class="button primary" href="mailto:vp14032001@gmail.com">Email me</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/vishwas-prabhakara-2050821b6/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button secondary" href="https://github.com/VishwasPrabhakara" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Designed and built by Vishwas Prabhakara.</p>
+    <p>Forecasting · MLOps · Applied AI</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
